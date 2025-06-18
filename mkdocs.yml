@@ -1,2 +1,26 @@
-site_name: 榴莲的数字花园
+site_name: 榴莲的笔记本
 site_description: make time seen
+
+
+nav:
+  - 关于我: 
+    - index.md
+  - 海洋|进行中: 
+    - index.md
+
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+  
+  palette:
+    primary: teal
+    accent: amber
+
+  font:
+    text: Roboto
+    code: Roboto Mono
