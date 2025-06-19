@@ -1,12 +1,25 @@
 site_name: 榴莲的笔记本
 site_description: make time seen
-
+use_directory_urls: false
 
 nav:
-  - 关于我: 
+  - 首页: 
     - index.md
-  - 海洋|进行中: 
-    - index.md
+  - 归一: 
+    - 自我觉察.md
+    - 宇宙仰观.md
+  - 兴趣:
+    - 名柯记录.md
+    - 喜欢的画.md
+    - 巧星记录.md
+  - 生活:
+    - 日常管理.md
+    - 好物记录.md
+    - 差物记录.md
+    - 医药箱.md
+  - 工具箱:
+    - 工具箱.md
+
 
 
 theme:
