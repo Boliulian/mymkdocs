@@ -985,10 +985,8 @@
 
   <h1>日常管理</h1>
 
-<h2 id="mkdocs">MkDocs 部署博客 | 进行中</h2>
+<h2 id="mkdocs">MkDocs 部署博客 | 进行中<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h2>
 <p>日期：2025-06-17 - </p>
-<p>参考：<a href="https://sspai.com/prime/story/mkdocs-primer">笔记文档一把梭——MkDocs 快速上手指南 ｜ 少数派会员 π+Prime</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/383582472">(45 封私信 / 80 条消息) Mkdocs 配置和使用 - 知乎</a></p>
 <pre><code class="language-bash">pip install mkdocs
 mkdocs serve
 </code></pre>
@@ -1001,28 +999,46 @@ git push
 <pre><code class="language-bash">pip install mkdocs-material
 </code></pre>
 <p>参考material的中文文档：<a href="https://mkdoc-material.llango.com/setup/changing-the-colors/">修改颜色 - Material for MkDocs 中文文档</a></p>
-<p>图片缩放后会变成<img>标签，mkdocs无法识别</p>
+<p>图片在typora中缩放后会变成<img>标签，mkdocs无法识别</p>
 <p>解决方案是设置</p>
 <pre><code class="language-bash">use_directory_urls: false
+</code></pre>
+<p>markdown扩展</p>
+<p>下载checklist</p>
+<pre><code class="language-bash">pip install markdown-checklist
+</code></pre>
+<p>并配置</p>
+<pre><code class="language-bash">markdown_extensions:
+  - toc:
+      permalink: True
+  - footnotes
+  - tables
+  - markdown_checklist.extension
 </code></pre>
 <p>文章加密</p>
 <pre><code>pip install mkdocs-encryptcontent-plugin
 </code></pre>
-<p>可参考官方文档的设置文件：https://github.com/llango/mkdocs-material-github-page-demo/blob/main/mkdocs.yml</p>
-<h2 id="_1">家用打印机选购｜已完成</h2>
+<p>页面加密</p>
+<pre><code class="language-bash">
+</code></pre>
+<p>参考：</p>
+<p><a href="https://sspai.com/prime/story/mkdocs-primer">笔记文档一把梭——MkDocs 快速上手指南 ｜ 少数派会员 π+Prime</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/383582472">(45 封私信 / 80 条消息) Mkdocs 配置和使用 - 知乎</a></p>
+<p>官方文档的配置文件：https://github.com/llango/mkdocs-material-github-page-demo/blob/main/mkdocs.yml</p>
+<h2 id="_1">家用打印机选购｜已完成<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>日期：2025-06-17 - 2025-06-17</p>
 <p>参考：<a href="https://sspai.com/post/61154">不想每次都跑文印店的你，可以这样挑选一台家用打印机 - 少数派</a></p>
 <p>计划选择爱普生和墨仓式</p>
 <p>爱普生 L4268，¥1340</p>
 <p>咸鱼买纸，可以单包买</p>
 <hr />
-<h2 id="_2">收藏夹清理｜不定期</h2>
+<h2 id="_2">收藏夹清理｜不定期<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>b站、xhs、微博、知乎、浏览器书签</p>
-<h2 id="_3">数据备份｜不定期</h2>
+<h2 id="_3">数据备份｜不定期<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>微信、工作文件夹、本地与服务器代码</p>
-<ul>
-<li>[x] 2025-06-18 安卓机微信记录迁移至电脑</li>
-<li>[ ] 苹果机微信记录迁移至电脑</li>
+<ul class="checklist">
+<li><input type="checkbox" disabled checked> 2025-06-18 安卓机微信记录迁移至电脑</li>
+<li><input type="checkbox" disabled> 苹果机微信记录迁移至电脑</li>
 </ul>
 
 
@@ -1030,6 +1046,9 @@ git push
 
 
 
+
+  
+  
 
 
 

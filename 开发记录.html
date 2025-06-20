@@ -1098,13 +1098,13 @@
 
   <h1>开发记录</h1>
 
-<h2 id="python">Python</h2>
-<h3 id="plot">Plot</h3>
+<h2 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h2>
+<h3 id="plot">Plot<a class="headerlink" href="#plot" title="Permanent link">&para;</a></h3>
 <p>时间序列</p>
 <p>函数定义时指定数据类型 <code>-&gt;</code></p>
 <pre><code class="language-python">def validate_data(data: xr.Dataset) -&gt; Tuple[xr.Dataset]:
 </code></pre>
-<h3 id="torch">Torch</h3>
+<h3 id="torch">Torch<a class="headerlink" href="#torch" title="Permanent link">&para;</a></h3>
 <p>cuda信息</p>
 <pre><code class="language-python">torch.version.cuda
 torch.__version__
@@ -1113,11 +1113,11 @@ torch.cuda.device_count()
 torch.cuda.get_device_name()
 torch.cuda.get_device_capability()
 </code></pre>
-<h4 id="tips">TIPS</h4>
+<h4 id="tips">TIPS<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h4>
 <p>pip安装的包conda remove删不掉</p>
 <p>用全大写字母表示常量定义，小写字母表示变量，是一种约定俗成，来表示某些值应该被视为常量</p>
 <p>fstring动态字符串，f"mask_{lev}"的结果是"mask_0"，在动态输出的时候经常用到</p>
-<h2 id="cuda">CUDA</h2>
+<h2 id="cuda">CUDA<a class="headerlink" href="#cuda" title="Permanent link">&para;</a></h2>
 <p>torch和cuda的匹配规则</p>
 <ul>
 <li>python和pytorch匹配矩阵：<a href="https://lightning.ai/docs/pytorch/latest/versioning.html#compatibility-matrix">Versioning Policy — PyTorch Lightning 2.5.1rc2 documentation</a></li>
@@ -1153,8 +1153,8 @@ gpu17：535.104.12 12.2
 
 gpu18：535.104.12 12.2
 </code></pre>
-<h2 id="linux">LINUX</h2>
-<h3 id="_1">系统</h3>
+<h2 id="linux">LINUX<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
+<h3 id="_1">系统<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <p>连接GPU资源（需要用私钥</p>
 <pre><code class="language-bash">ssh -i ~/.ssh/id_rsa qd_zlliu@10.16.202.17 -p 22
 ssh -i ~/.ssh/id_rsa qd_zlliu@10.16.202.18 -p 22
@@ -1200,7 +1200,7 @@ kill -9 &lt;PID&gt; #强制
 </code></pre>
 <p>卸载module</p>
 <p>集群上已安装docker</p>
-<h3 id="_2">文件</h3>
+<h3 id="_2">文件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>新建目录</p>
 <pre><code class="language-bash">mkdir
 </code></pre>
@@ -1258,14 +1258,14 @@ chmod 644 file
 <p>查看符号链接路径</p>
 <pre><code class="language-bash">ls -l INPUT/ocean_hgrid.nc
 </code></pre>
-<h3 id="_3">脚本</h3>
+<h3 id="_3">脚本<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p>bash循环语句使用方法：https://www.yiibai.com/bash/bash-for-loop.html</p>
 <pre><code class="language-bash">arr=&quot;100 200 300&quot;
 for i in $arr;do
 echo $i
 done
 </code></pre>
-<h3 id="vim">vim</h3>
+<h3 id="vim">vim<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h3>
 <p>进入插入模式</p>
 <pre><code class="language-bash">i
 </code></pre>
@@ -1275,8 +1275,8 @@ done
 <p>保存并退出</p>
 <pre><code class="language-bash">:wq
 </code></pre>
-<h2 id="docker">Docker</h2>
-<h3 id="docker_1">安装docker</h3>
+<h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
+<h3 id="docker_1">安装docker<a class="headerlink" href="#docker_1" title="Permanent link">&para;</a></h3>
 <p>课件地址：https://docker.easydoc.net
 官方安装文档：https://docs.docker.com/engine/install/ubuntu/</p>
 <p>卸载旧版本</p>
@@ -1326,7 +1326,7 @@ sudo systemctl restart docker
 systemctl status docker
 </code></pre>
 <p>再次运行sudo docker run hello-world，成功</p>
-<h3 id="dockerfile">编写Dockerfile</h3>
+<h3 id="dockerfile">编写Dockerfile<a class="headerlink" href="#dockerfile" title="Permanent link">&para;</a></h3>
 <p>镜像源，可用[<a href="https://blog.csdn.net/FL1623863129/article/details/132275060">docker]nvidia的cuda镜像列表-CSDN博客</a></p>
 <pre><code class="language-bash">sudo docker pull nvcr.io/nvidia/cuda:12.1.0-cudnn8-runtime-ubuntu22.04
 </code></pre>
@@ -1381,7 +1381,7 @@ CMD [&quot;bash&quot;]
 <p>删除镜像</p>
 <pre><code class="language-bash">docker rmi &lt;image&gt;
 </code></pre>
-<h3 id="_4">使用容器</h3>
+<h3 id="_4">使用容器<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>进入容器（未运行）</p>
 <pre><code class="language-bash">sudo docker run -it --name my-test-container my-image /bin/bash
 </code></pre>
@@ -1414,7 +1414,7 @@ sudo systemctl restart docker
 <p>重新启动</p>
 <pre><code class="language-bash">sudo systemctl restart docker
 </code></pre>
-<h3 id="_5">服务器使用镜像</h3>
+<h3 id="_5">服务器使用镜像<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>导出镜像</p>
 <pre><code class="language-bash">sudo docker save -o samudra_image.tar samudra
 </code></pre>
@@ -1462,8 +1462,8 @@ chmod 644 ubuntu_docker.tar
 <pre><code class="language-bash">nvidia-docker run -it --name samudra -v /home/qd_zlliu/samudra/code:/samudra/code -v /home/qd_zlliu/samudra/data:/samudra/data -v /home/qd_zlliu/anaconda3:/samudra/anaconda3 --device /dev/nvidia0:/dev/nvidia0 --device /dev/nvidia1:/dev/nvidia1 --device /dev/nvidia2:/dev/nvidia2 --device /dev/nvidia3:/dev/nvidia3 --device /dev/nvidia4:/dev/nvidia4 --device /dev/nvidia5:/dev/nvidia5 --device /dev/nvidia6:/dev/nvidia6 --device /dev/nvidia7:/dev/nvidia7 --device /dev/nvidiactl:/dev/nvidiactl --device /dev/nvidia-uvm:/dev/nvidia-uvm --device /dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools -v nvidia_driver_535.104.12:/usr/local/nvidia:ro ubuntu_docker /bin/bash
 </code></pre>
 <p>找不到nvidia文件夹，作罢</p>
-<h2 id="ide">IDE</h2>
-<h3 id="wsl">WSL</h3>
+<h2 id="ide">IDE<a class="headerlink" href="#ide" title="Permanent link">&para;</a></h2>
+<h3 id="wsl">WSL<a class="headerlink" href="#wsl" title="Permanent link">&para;</a></h3>
 <p><strong>安装wsl</strong></p>
 <p>wsl是windows subsystem for linux，win10以上自带内置虚拟机</p>
 <pre><code class="language-bash">wsl --install
@@ -1504,11 +1504,11 @@ wsl --import Ubuntu D:\WSL\ D:\wsl_backup.tar --version 2
 <p><strong>remote-ssh</strong>失败</p>
 <p>vscode版本太新，远程服务器glib版本不够</p>
 <p>需要vscode降级</p>
-<h3 id="vs-code">VS code</h3>
+<h3 id="vs-code">VS code<a class="headerlink" href="#vs-code" title="Permanent link">&para;</a></h3>
 <p>快捷键cmd+shift+P</p>
 <p>全局搜索cmd+shift+F</p>
 <p>launch.json文件必须放在.vscode下面</p>
-<h3 id="anaconda">Anaconda</h3>
+<h3 id="anaconda">Anaconda<a class="headerlink" href="#anaconda" title="Permanent link">&para;</a></h3>
 <p>安装Anaconda</p>
 <pre><code class="language-bash">wget -P ~ https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh #获取最新版anaconda
 bash ~/Anaconda3-2024.10-1-Linux-x86_64.sh #安装 一路选yes
@@ -1537,13 +1537,13 @@ conda env create -f environment.yml
 <p>克隆环境</p>
 <pre><code class="language-bash">conda create --name samudra_cu121 --clone samudra
 </code></pre>
-<h2 id="github">Github</h2>
+<h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
 <p><strong>GitDiagram</strong></p>
 <p>自动绘制项目框架图，将github换成gitdiagram</p>
 <pre><code class="language-bash">https://github.com/m2lines/samudra
 https://gitdiagram.com/m2lines/samudra
 </code></pre>
-<h3 id="ssh">SSH</h3>
+<h3 id="ssh">SSH<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h3>
 <p>配置github SSH</p>
 <p>新电脑第一次git clone前需要做的事情</p>
 <pre><code class="language-bash">ls ~/.ssh
@@ -1578,7 +1578,7 @@ git push
 <p>删除远程仓库</p>
 <pre><code class="language-bash">git remote remove origin
 </code></pre>
-<h2 id="hpc">HPC</h2>
+<h2 id="hpc">HPC<a class="headerlink" href="#hpc" title="Permanent link">&para;</a></h2>
 <p>超算 节点数 核数</p>
 <p>https://top500.org/</p>
 <p>美国 El Capitan 1.1万 1.1千万
